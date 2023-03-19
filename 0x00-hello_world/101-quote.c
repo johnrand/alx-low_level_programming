@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry point of the program
@@ -9,7 +10,7 @@
 
 int main(void)
 {
-	const char message[];
+	const char message[10];
 
 	message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
