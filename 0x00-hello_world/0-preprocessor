@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp main.c > c | echo "$CFILE" 
+cpp $CFILE > c
