@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * print to the output 
+ * main - Entry point
+ * Description: print to the output.
  *
- * return - zero
+ * @return Returns 0 on success.
  */
 
 int main(void)
 {
-	puts("Programming is like buillding a multilingual puzzle");
+	/*prints the results on output*/
+	puts("\"Programming is like buillding a multilingual puzzle");
 
 	return (0);
 }
