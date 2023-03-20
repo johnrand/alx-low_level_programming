@@ -11,9 +11,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 122; 1 >= 97; i--)
+	for (i = 'z'; 1 >= 'a'; i--)
 	{
-		putchar('a' + i);
+		putchar(i);
 	}
 
 	putchar('\n');
