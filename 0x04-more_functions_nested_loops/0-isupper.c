@@ -14,11 +14,19 @@ int main(void)
 
 	c = 'A';
 
-	printf("%c: %d\n", c, _isupper(c));
+	_putchar(c);
+	_putchar(':');
+	_putchar(' ');
+	_putchar('0' + _isupper(c));
+	_putchar('\n');
 
 	c = 'a';
 
-	printf("%c: %d\n", c, _isupper(c));
+	_putchar(c);
+	_putchar(':');
+	_putchar(' ');
+	_putchar('0' + _isupper(c));
+	_putchar('\n');
 
 	return (0);
 }
