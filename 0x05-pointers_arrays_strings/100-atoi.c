@@ -5,7 +5,7 @@
  *
  * @s: a pointer to the string to be converted
  *
- * Return: the integer value of the string
+ * Return: int (sign * result)
  */
 
 int _atoi(char *s)
