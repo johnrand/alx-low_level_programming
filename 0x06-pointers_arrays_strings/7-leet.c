@@ -12,8 +12,8 @@ char *leet(char *str)
 {
 	int i;
 	int j;
-	char letters[] = "aeotlAEOTL";
-	char numbers[] = "430710";
+	char *letters = "aeotlAEOTL";
+	char *numbers = "430710";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -21,7 +21,7 @@ char *leet(char *str)
 		{
 			if (str[i] == letters[j])
 			{
-				str[i] = numbers[j / 2];
+				str[i] = numbers[j];
 				break;
 			}
 		}
