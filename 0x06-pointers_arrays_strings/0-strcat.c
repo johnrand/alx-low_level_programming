@@ -11,18 +11,24 @@
 
 char *_strcat(char *dest, char *src)
 {
+	int i;
+	int j;
+
+	i = 0;
+
 	/* remove the null-terminating on the string */
-	while (*dest != '\0')
+	while (*dest[i] != '\0')
 	{
-		dest++;
+		i++;
 	}
+	j = 0;
 
 	/* add th src string to dest removing the '\0' */
-	while (*src != '\0')
+	while (*src[j] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
 	/* add a null-terminating to the concatenated string */
