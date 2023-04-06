@@ -10,28 +10,20 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
+	if (n == 0 || n == 1)
 	{
 		return (n);
 	}
+
+	int sqrt;
+
+	sqrt = _sqrt_recusion(n - 1);
+	if (sqrt * sqrt == n)
+	{
+		return (sqrt);
+	}
 	else
 	{
-		int i;
-
-		i = 1;
-
-		while (i * i <= n)
-		{
-			if (i * i == n)
-			{
-				return (n);
-			}
-			i++;
-		}
 		return (-1);
 	}
 }
