@@ -25,12 +25,12 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		sqrt_m = _sqrt_recursion(n - 1) + 1;
+		sqrt_m = _sqrt_recursion(n - 1);
 
 		result = sqrt_m * sqrt_m;
-		if (result > n)
+		if (result < n)
 		{
-			return (sqrt_m - 1);
+			return (sqrt_m + 1);
 		}
 		else if (result == n)
 		{
