@@ -11,12 +11,12 @@
 
 int _sqrt_recursion(int n)
 {
+	int sqrt_m;
+
 	if (n == 0 || n == 1)
 	{
 		return (n);
 	}
-
-	int sqrt_m;
 
 	sqrt_m = _sqrt_recursion(n - 1);
 
