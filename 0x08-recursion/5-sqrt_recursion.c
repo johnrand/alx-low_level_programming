@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	int sqrt_m = _sqrt_recusion(n - 1);
+	int sqrt_m = _sqrt_recursion(n - 1);
 
 	if (sqrt_m * msqrt_m == n)
 	{
