@@ -12,20 +12,33 @@
 int _sqrt_recursion(int n)
 {
 	int sqrt_m;
+	int result;
 
-	if (n == 0 || n == 1)
+	if (n < 0)
+	{
+		return (-1);
+	}
+
+	else if (n == 0 || n == 1)
 	{
 		return (n);
 	}
-
-	sqrt_m = _sqrt_recursion(n - 1);
-
-	if (sqrt_m * sqrt_m == n)
-	{
-		return (sqrt_m);
-	}
 	else
 	{
-		return (-1);
+		sqrt_m = _sqrt_recursion(n - 1) + 1;
+
+		result = sqrt_m * sqrt_m;
+		if (result > n)
+		{
+			return (sqrt_m - 1);
+		}
+		else if (result == n)
+		{
+			return (sqrt_m);
+		}
+		else
+		{
+			return (sqrt_m);
+		}
 	}
 }
