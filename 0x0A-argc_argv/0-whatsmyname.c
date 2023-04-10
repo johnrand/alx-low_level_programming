@@ -11,14 +11,13 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	char *name_of_program;
+	char *name_of_program = argv[0];
 
-	*name_of_program = argv[0];
 	i = 0;
 
 	while (name_of_program[i] != '\0')
 	{
-		_putchar(name_of_programe[i]);
+		_putchar(name_of_program[i]);
 		i++;
 	}
 	_putchar('\n');
