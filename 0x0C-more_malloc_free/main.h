@@ -19,4 +19,6 @@ void mul(char *num1, char *num2);
 
 int main(int argc, char **argv);
 
+int main(int argc, char *argv[]);
+
 #endif /* MAIN_H */
