@@ -11,7 +11,7 @@
  * Return: 1
  */
 
-int __atribute__ ((unused)) is_positive_integer(char *str)
+int is_positive_integer(char *str __attribute__((unused)))
 {
 	if (*str == '-')
 	{
@@ -43,6 +43,9 @@ int main(int argc, char **argv)
 	if (argc == 1)
 	{
 		printf("%d\n", sum);
+		(void)argc;
+		(void)argv;
+
 		return (0);
 	}
 	for (int i = 1; i < argc; i++)
