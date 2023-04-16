@@ -9,4 +9,9 @@ int main(void);
 
 int main(int argc, char *argv[]);
 
+int is_positive_integer(char *str);
+
+
+int main(int argc, char **argv);
+
 #endif /* MAIN_H */
