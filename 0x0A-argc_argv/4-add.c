@@ -11,7 +11,7 @@
  * Return: 1
  */
 
-int is_positive_integer(char *str)
+int __atribute__ ((unused)) is_positive_integer(char *str)
 {
 	if (*str == '-')
 	{
