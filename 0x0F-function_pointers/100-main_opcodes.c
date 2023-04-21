@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int bytes;
-	unsigned char *opcode;
 
 	if (argc != 2)
 	{
@@ -30,7 +29,7 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	*opcode = (unsigned char *)main;
+	unsigned char *opcode = (unsigned char *)main;
 
 	for (i = 0; i < bytes; i++)
 	{
