@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	void (*main_func)(void) = main;
 	unsigned char *opcode = (unsigned char *)main;
 
 	for (i = 0; i < bytes; i++)
