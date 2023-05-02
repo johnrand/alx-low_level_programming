@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - singly linked list
+ * struct listint_t - singly linked list
  * @n: integer
  * @next: points to the next node
  *
@@ -13,11 +13,11 @@
  * for my project
  */
 
-typedef struct listint_s
+typedef struct listint_t
 {
 	int n;
-	struct listint_s *next;
-} listint_s;
+	struct listint_t *next;
+} listint_t;
 
 int _putchar(char c);
 
