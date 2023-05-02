@@ -1,15 +1,17 @@
 section .data
-    message db "Hello, Holberton", 10, 0
-
+    msg db 'Hello, Holberton', 0
 section .text
-    global main
-
-    extern printf
-
-main:
-    push    message
-    call    printf
-    add     rsp, 8
-
-    mov     eax, 0
+    global _start
+_start:
+    ; set up stack
+    mov rsp, rbp
+    sub rsp, 16
+    ; call printf
+    mov edi, msg
+    mov eax, 0
+    call printf
+    ; exit program
+    mov eax, 0
+    add rsp, 16
     ret
+
