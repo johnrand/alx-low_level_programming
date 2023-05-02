@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * myStartupFun - Function to print a string before main is executed.
