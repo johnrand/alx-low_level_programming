@@ -1,17 +1,17 @@
 section .data
-    msg db 'Hello, Holberton', 0
+    msg db "Hello, Holberton", 0Ah, 0
+
 section .text
     global _start
+
 _start:
-    ; set up stack
-    mov rsp, rbp
-    sub rsp, 16
-    ; call printf
-    mov edi, msg
-    mov eax, 0
+    ; prepare arguments for printf
+    push qword msg
     call printf
-    ; exit program
+    add rsp, 8 ; clean up the stack
+
+    ; exit the program with status code 0
     mov eax, 0
-    add rsp, 16
     ret
 
+section .note.GNU-stack noalloc noexec nowrite progbits
