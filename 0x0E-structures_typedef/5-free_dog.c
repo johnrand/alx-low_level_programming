@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * free_dog - frees memory previously allocated for a dog_t struct
