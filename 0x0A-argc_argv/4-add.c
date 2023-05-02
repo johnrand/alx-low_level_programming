@@ -4,56 +4,32 @@
 #include <ctype.h>
 
 /**
- * is_positive_integer - Checks if a string
- * represents a positive integer
- * @str: the string checked
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: 1
- */
-
-int is_positive_integer(char *str __attribute__((unused)))
-{
-	if (*str == '-')
-	{
-		return (0);
-	}
-	while (*str != '\0')
-	{
-		if (!isdigit(*str))
-		{
-			return (0);
-		}
-		str++;
-	}
-	return (1);
-}
-
-/**
- * main - entry point
- * @argc: number of arguments passed
- * @argv: array containg number of arguments
- *
- * Return: 0
+ * Return: 0 for success, 1 for error
  */
 
 int main(int argc, char **argv)
 {
-	int sum = 0;
+	int i, j, sum = 0;
 
 	if (argc == 1)
 	{
-		printf("%d\n", sum);
-		(void)argc;
-		(void)argv;
-
+		printf("0\n");
 		return (0);
 	}
-	for (int i = 1; i < argc; i++)
+
+	for (i = 1; i < argc; i++)
 	{
-		if (!is_positive_integer(argv[i]))
+		for (j = 0; argv[i][j]; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		sum += atoi(argv[i]);
 	}
