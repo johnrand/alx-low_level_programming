@@ -10,7 +10,7 @@
  * Return: The addres of the new node or null if it faild
  */
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new_node = malloc(sizeof(dlistint_t));
 	dlistint_t *current = *h;

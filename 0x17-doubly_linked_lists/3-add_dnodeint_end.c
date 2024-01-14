@@ -8,7 +8,7 @@
  * Return: The address of the new element or Null of it fails
  */
 
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node = malloc(sizeof(dlistint_t));
 	dlistint_t *last = *head;
