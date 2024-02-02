@@ -10,13 +10,15 @@
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
+	unsigned long int hash_value;
+
 	if (key == NULL || size == 0)
 	{
 		return (0);
 	}
 
 	/* Use hash_djb2 fun to compute hash value */
-	unsigned long int hash_value = hash_djb2(key);
+	hash_value = hash_djb2(key);
 
 	/* Calculate index using hash value and size of array */
 	return (hash_value % size);
