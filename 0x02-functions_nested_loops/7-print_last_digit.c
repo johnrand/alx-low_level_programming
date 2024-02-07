@@ -10,6 +10,6 @@
 int print_last_digit(int n)
 {
 	/* get the absolute value of number */
-	_abs(n);
+	n = n < 0 ? -n: n;
 	return (n % 10);
 }
