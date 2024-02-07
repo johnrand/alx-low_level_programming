@@ -38,8 +38,10 @@ void times_table(void)
 			result = i * j;
 			print_number(result);
 			if (j < 9)
+			{
 				_putchar(',');
-			_putchar(' ');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
