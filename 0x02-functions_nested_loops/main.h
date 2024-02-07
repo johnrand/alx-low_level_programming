@@ -22,5 +22,9 @@ int print_last_digit(int n);
 
 void jack_bauer(void);
 
+void print_number(int num);
+
+void times_table(void);
+
 
 #endif /* MAIN_H */
