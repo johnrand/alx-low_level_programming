@@ -11,6 +11,7 @@ void print_number(int num)
 {
 	if (num < 10)
 	{
+		_putchar(' ');
 		_putchar(num + '0');
 	}
 	else
@@ -39,7 +40,6 @@ void times_table(void)
 			if (j < 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
