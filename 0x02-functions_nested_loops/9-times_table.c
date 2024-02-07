@@ -11,7 +11,6 @@ void print_number(int num)
 {
 	if (num < 10)
 	{
-		_putchar(' ');
 		_putchar(num + '0');
 	}
 	else
