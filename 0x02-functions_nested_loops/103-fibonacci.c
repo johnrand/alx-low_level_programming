@@ -19,6 +19,7 @@ int main(void)
 	{
 		if (fib2 % 2 == 0)
 		{
+			/* get sum */
 			sum += fib2;
 		}
 
