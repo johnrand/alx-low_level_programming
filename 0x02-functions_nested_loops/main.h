@@ -2,7 +2,10 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <unistd.h>
 
-char _putchar(char c);
+int _putchar(char c);
 
-#endif /* MAIN_H *?
+void print_alphabet(void);
+
+#endif /* MAIN_H */
