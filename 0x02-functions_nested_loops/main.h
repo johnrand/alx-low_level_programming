@@ -18,4 +18,7 @@ int print_sign(int n);
 
 int _abs(int i);
 
+int print_last_digit(int n);
+
+
 #endif /* MAIN_H */
