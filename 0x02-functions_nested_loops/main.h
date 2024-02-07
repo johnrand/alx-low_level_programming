@@ -26,5 +26,9 @@ void print_number(int num);
 
 void times_table(void);
 
+int add(int m, int n);
+
+void print_to_98(int n);
+
 
 #endif /* MAIN_H */
