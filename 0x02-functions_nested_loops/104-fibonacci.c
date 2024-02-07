@@ -2,14 +2,14 @@
 
 /**
  * main - Entry point
- * Description: print 1st 50 fibonacci starting from 1 and 2
+ * Description: print 1st 98 fibonacci starting from 1 and 2
  *
  * Return: Always (0) success
  */
 
 int main(void)
 {
-	int n = 50;
+	int n = 98;
 	int fib1 = 1, fib2 = 2, fib_next;
 	int i;
 
