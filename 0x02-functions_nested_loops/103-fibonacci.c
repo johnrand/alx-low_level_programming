@@ -12,7 +12,7 @@ int main(void)
 {
 	int n = 4000000;
 	long int fib1 = 1, fib2 = 2, fib_next;
-	long int sum;
+	int sum;
 
 	/* Iterate through Fibonacci sequence */
 	while (fib2 <= n)
@@ -28,6 +28,6 @@ int main(void)
 		fib2 = fib_next;
 	}
 
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
