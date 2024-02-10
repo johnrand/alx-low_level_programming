@@ -12,6 +12,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
+	int i;
 	int days_in_month[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 	int total_days = 0;
@@ -25,7 +26,7 @@ void print_remaining_days(int month, int day, int year)
 
 	/* Calculate total days up to given month */
 
-	for (int i = 1; i < month; i++)
+	for (i = 1; i < month; i++)
 	{
 		total_days += days_in_month[i];
 	}
