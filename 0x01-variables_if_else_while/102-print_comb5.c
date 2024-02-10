@@ -10,25 +10,22 @@
 int main(void)
 {
 	int i, j;
-	int first = 1; /* track if its the 1st pair */
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = i + 1; j < 10; ++j)
+		for (j = i; j < 100; j++)
 		{
-			if (!first)
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+
+			if (i != 99 || j != 99)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			else
-			{
-				first = 0;
-			}
-
-			putchar(i + '0');
-			putchar(j + '0');
-
 		}
 	}
 
