@@ -14,7 +14,7 @@ int main(void)
 
 	message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(STDERR_FILENO, message, sizeof(message) + 52);
+	write(STDERR_FILENO, message, sizeof(message) + 51);
 
 	return (1);
 }
